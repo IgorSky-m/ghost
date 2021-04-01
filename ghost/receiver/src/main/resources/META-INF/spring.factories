@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.skachko.receiver.config.WebConfig,\
+  com.skachko.receiver.config.BeanConfig,\
+  com.skachko.receiver.config.QueueConfig

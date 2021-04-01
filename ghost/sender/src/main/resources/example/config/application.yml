@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: sender
+  rabbitmq:
+    username: user
+    password: 'password'
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/ghost
+    username: username
+    password: 'password'
+server:
+  port:
+    8888
+
+database:
+  schema: ghost
+  table: ghost
+
+ghost:
+  sender:
+
+    database:
+      schema: ghost
+      table: ghost
+    enabled: true
+    ttl: 30000
+    rate: 30000
+    batch: 10
+    receivers:
+      user: user-service
+
+logging:
+  level:
+    org:
+      springframework:
+        scheduling:
+          quartz: DEBUG
+      quartz: DEBUG

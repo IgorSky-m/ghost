@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.skachko.sender.config.quartz.QuartzConfig,\
+  com.skachko.sender.config.BeanConfig,\
+  com.skachko.sender.config.QueueConfig

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: receiver
+  rabbitmq:
+    username: user
+    password: 'password'
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/receiver
+    username: username
+    password: 'password'
+server:
+  port:
+    14204
+
+ghost:
+  receiver:
+    enabled: true
+    essences:
+      user:
+        dao: userDao
+        dto: user
